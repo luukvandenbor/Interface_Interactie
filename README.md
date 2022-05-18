@@ -14,9 +14,9 @@ Mijn startniveau is: Blauw
   <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
 
   ### De eerste versie/schets:
-  <img src="readme-images/schets1.HEIC" width="375px" alt="eerste versie/schets">
+  <img src="readme-images/schets1.png" width="375px" alt="eerste versie/schets">
 
-  <img src="readme-images/schets2.HEIC" width="375px" alt="eerste versie/schets">
+  <img src="readme-images/schets2.png" width="375px" alt="eerste versie/schets">
 
   Mijn persoonlijke uitdaging binnen dit vak is om er voor te zorgen dat ik met behulp van code, de 4 verschillende Hedgehog games van Sonic kan laten bewegen.
 
