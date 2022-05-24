@@ -200,7 +200,7 @@ function verwijderAchtergrond() {
 }
 
 
-document.body.style.backgroundImage = "url('../images/startachtergrond.png')";
+document.body.style.backgroundImage = "url('images/startachtergrond.png')";
 
 musicButton.style.opacity = "0"
 deButton.style.opacity = "0"
