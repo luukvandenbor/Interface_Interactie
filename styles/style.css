@@ -1,164 +1,189 @@
-/* Fonts */
+/* Fonts van FontSquirrel*/
 @font-face {
     font-family: 'nisesegasonic';
-    src: url('../fonts/nisesegasonic-webfont.woff2') format('woff2'),
-        url('../fonts/nisesegasonic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    src: url('../fonts/nisesegasonic-webfont.woff2') format('woff2'),
+        url('../fonts/nisesegasonic-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'gamefont';
-    src: url('../fonts/emulogic-zrew-webfont.woff2') format('woff2'),
-        url('../fonts/emulogic-zrew-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    src: url('../fonts/emulogic-zrew-webfont.woff2') format('woff2'),
+        url('../fonts/emulogic-zrew-webfont.woff') format('woff');
 }
 
+/********************/
+/*Custom Properties*/
 *,
 *::after,
 *::before {
     box-sizing: border-box;
-}
-
-html body {
-    margin: 0;
-    background-color: rgb(30, 23, 176);
-    position: relative;
-    overflow: hidden;
-}
-
-body {
-    height: 100vh;
-    width: 100vw;
+    --sonic-blauw: rgb(30, 23, 176);
+    --sonic-geel: rgb(246, 200, 71);
+    --black: #000000;
+    --white: #ffffff;
 }
 
 button:not([disabled]) {
     cursor: pointer;
 }
 
-/* jouw CSS vanaf hier (overlapping HTML elementen) */
+/********************/
+/*Indeling pagina*/
+html {
+    height: 100%;
+}
+
+body {
+    background-image: "images/sonic1background.png";
+    background-color: var(--sonic-blauw);
+    padding: 0;
+    margin: 0;
+}
+
+/*Styling Buttons*/
+button {
+    font-family: 'gamefont', sans-serif;
+    font-size: 11pt;
+    border-color: var(--black);
+}
+
+/*Sonic Titel)*/
+h1 {
+    position: relative;
+    font-family: 'nisesegasonic', sans-serif;
+    font-size: 27pt;
+    color: var(--sonic-geel);
+    text-shadow: -0.06em -0.06em 0 var(--black), 0.06em -0.06em 0 var(--black), -0.06em 0.06em 0 var(--black), 0.06em 0.06em 0 var(--black);
+    margin-top: 1em;
+    margin-bottom: .2em;
+    text-align: center;
+}
+
+/*Sonic Tijdlijn Uitleg */
+p {
+    position: relative;
+    font-family: 'nisesegasonic', sans-serif;
+    font-size: 12pt;
+    color: var(--white);
+    margin-top: 0;
+    margin-bottom: 0.1em;
+    text-align: center;
+}
+
 header {
+    position: relative;
+    top: 0;
+}
+
+/*Start Achtergrond*/
+header img {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/*Buttons Tijdlijn 1 t/m 4*/
+header section:first-of-type {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 12em;
+}
+
+header section:first-of-type ol {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto auto auto;
+    margin: 0;
+    top: 2em;
+    column-gap: 6em;
+    list-style-type: none;
     z-index: 1;
 }
 
-/* Sonic Titel */
-h1 {
-    color: rgb(246, 200, 71);
-    text-shadow: -0.06em -0.06em 0 rgb(0, 0, 0), 0.06em -0.06em 0 rgb(0, 0, 0), -0.06em 0.06em 0 rgb(0, 0, 0), 0.06em 0.06em 0 rgb(0, 0, 0);
-    text-align: center;
-    font-family: 'nisesegasonic', sans-serif;
-}
-
-/* Sonic Tijdlijn Uitleg */
-p {
-    font-family: 'nisesegasonic', sans-serif;
-    text-align: center;
-    color: white;
-}
-
-/* Buttons Algemene Styling/Positionering */
-button {
-    font-family: 'gamefont', sans-serif;
-    margin: 0 auto;
-    display: block;
-    border-color: black;
-}
-
-section {
+/*Button Muziek*/
+header section:nth-of-type(2) {
     display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 1.25em auto 0;
+    position: relative;
+    justify-content: center;
+    top: .1em;
 }
 
-/* Achtergrond */
-main img:first-of-type {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    padding-top: 3.12em;
-    object-fit: contain;
+/*Sonic Poppetjes*/
+main button {
+    appearance: none;
+    border: none;
+    background: none;
 }
+
+Button:hover {
+    Background-color: var(--sonicblue);
+    Border-color: var(--red);
+}
+
+Button:active {
+    Background-color: var(--red);
+}
+
+/*Styling Titels Tijdlijn*/
+main ol {
+    list-style-type: none;
+}
+
+
+/********************/
+/*Button Press Start*/
+footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 23.3em;
+}
+
+
+
+/********************/
+/*Achtergronden*/
+body.j1991 {
+    background-image: url("../images/sonic1background.png");
+}
+
+body.j1992 {
+    background-image: url("../images/sonic2background.png");
+}
+
+body.j1994 {
+    background-image: url("../images/sonic3background.png");
+}
+
+body.j2010 {
+    background-image: url("../images/sonic4background.png");
+}
+
+
+/********************/
+/**ANIMATIES**/
+
 
 /* Sonic 1 - 1991 */
-section img:first-of-type {
+main button:first-of-type img {
     position: absolute;
     width: 15.62em;
     height: auto;
-    top: 10.8em;
+    top: 38em;
     left: 2.5em;
+    animation-delay: 1s;
 }
 
 .rennen {
-    animation: lopen .5s ease-in-out forwards;
-}
-
-@keyframes lopen {
-    0% {
-        left: 2.5em;
-    }
-
-    100% {
-        left: 21.25em;
-    }
-}
-
-/* Sonic 2 - 1992 */
-section img:nth-of-type(2) {
-    position: absolute;
-    width: 15.62em;
-    height: auto;
-    top: 13.75em;
-    left: 23.75em;
-}
-
-.springen {
-    animation: jump 1.5s ease-in-out forwards;
-}
-
-@keyframes jump {
-    0% {
-        left: 23.75em;
-    }
-
-    20% {
-        top: 11.25em;
-    }
-
-    35% {
-        left: 28.75em;
-        top: 15em;
-    }
-
-    50% {
-        top: 10.62em;
-    }
-
-    60% {
-        left: 36.25em;
-        top: 11em;
-    }
-
-    100% {
-        top: 11em;
-        left: 45.62em;
-    }
-}
-
-/* Sonic 3 - 1994 */
-section img:nth-of-type(3) {
-    position: absolute;
-    width: 15.62em;
-    height: auto;
-    top: 35em;
-    left: 1.25em;
-}
-
-.looping {
     animation: looping 2s ease-in-out forwards;
 }
 
@@ -197,43 +222,146 @@ section img:nth-of-type(3) {
         left: 56.25em;
     }
 
+    99% {
+        opacity: 1;
+    }
+
     100% {
         left: 53.12em;
         top: 17em;
         transform: rotate(-180deg);
+        opacity: 0;
+    }
+}
+
+/* Sonic 2 - 1992 */
+main button:nth-of-type(2) img {
+    position: absolute;
+    width: 15.62em;
+    height: auto;
+    top: 38em;
+    left: 18em;
+    animation-delay: 1s;
+}
+
+.springen {
+    animation: springenweer 2.5s ease-in-out forwards;
+}
+
+@keyframes springenweer {
+    0% {
+        left: 18em;
+    }
+
+    20% {
+        top: 13.25em;
+    }
+
+    35% {
+        left: 28.75em;
+        top: 13.25em;
+    }
+
+    50% {
+        top: 13.25em;
+    }
+
+    60% {
+        left: 36.25em;
+        top: 13.25em;
+    }
+
+    99% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 13.25em;
+        left: 45.62em;
+        opacity: 0;
+    }
+}
+
+/* Sonic 3 - 1994 */
+main button:nth-of-type(3) img {
+    position: absolute;
+    width: 15.62em;
+    height: auto;
+    top: 29.5em;
+    left: 1.25em;
+    animation-delay: 1s;
+}
+
+.looping {
+    animation: jump 3s ease-in-out forwards;
+}
+
+@keyframes jump {
+    0% {
+        left: 1.25em;
+    }
+
+    20% {
+        left: 15em;
+    }
+
+    35% {
+        left: 20em;
+        top: 10em;
+    }
+
+    50% {
+        left: 30em;
+        top: 29.5em;
+    }
+
+    70% {
+        left: 45em;
+
+    }
+
+    85% {
+        left: 55em;
+        top: 20em;
+    }
+
+    99% {
+        opacity: 1;
+    }
+
+    100% {
+        left: 65em;
+        top: 40em;
+        opacity: 0;
     }
 }
 
 /* Sonic 4 - 2010 */
-section img:nth-of-type(4) {
+main button:nth-of-type(4) img {
     position: absolute;
     width: 15.62em;
     height: auto;
-    top: 5.2em;
-    left: 80.37em;
-    transform: scaleX(-1);
+    top: 31em;
+    left: 20em;
+    animation-delay: 1s;
 }
 
+/* Sonic 4 Animatie Lopen */
 .springenweer {
-    animation: jump2 1.5s ease-in-out backwards;
+    animation: lopen .5s ease-in-out forwards;
 }
 
-@keyframes jump2 {
+@keyframes lopen {
     0% {
-        right: 45.62em;
+        left: 20em;
     }
 
-    30% {
-        left: 76em;
-        transform: rotate(0deg);
-    }
-
-    80% {
-        transform: rotate(-360deg);
+    99% {
+        opacity: 1;
     }
 
     100% {
-        left: 76em;
-        top: 23.5em;
+        left: 70em;
+        opacity: 0;
     }
 }

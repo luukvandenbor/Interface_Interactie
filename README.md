@@ -134,6 +134,22 @@ Geluiden set gedownload van het internet en de juiste toegevoegd per actie die w
   <img src="readme-images/wasmoeilijk.png" width="375px" alt="bummer">
 </details>
 
+## Feedback voor herkansing
+- Ontwerp aanpassen
+- Progressive Disclosure toevoegen
+- Achtergronden laten veranderen
+- Notities goed toevoegen voor overzicht
+- 1 class of ID per element gebruiken
+- Header en main goed positioneren
+- Lists (orderd lists) gebruiken voor sonics en buttons
+- Alts altijd toevoegen aan html elementen (screenreaders)
+- Start scherm gebruiken
+- Github testen of url werkt voor inleveren
+- Button states toevoegen (hover, active, focus)
+
+## Reflectie na Feedback/herkansing
+Heftig. Dat is het eerste woord wat er in me opkomt als ik kijk naar de afgelopen week. Doordat ik veel punten heb moeten aanpassen, begon ik tegen veel obstakels aan te lopen. Het grootste obstakel was de geluiden bij de buttons houden. Omdat ik de geluiden zonder class of ID moet aanroepen kostte dit veel tijd. Het laten veranderen van de achtergronden met behulp van de buttons (javascript) kostte ook ontzettend veel tijd. Dit was uiteindelijk wel gelukt, wat eindelijk voor een beetje opluchting heeft gezorgd. Daarna ben ik bezig geweest met de buttons states toevoegen, keyframe animaties aanpassen, ol’s toevoegen in html en alle elementen weer goed te positioneren. Na veel vallen en opstaan ben ik tot het eindresultaat gekomen. Het is visueel iets minder sterk dan ik in mijn hoofd had. Maar dat komt waarschijnlijk doordat mijn programmeer skills toch iets lager liggen dan mijn ontwerp skills.
+
 
 ## Bronnenlijst
 
